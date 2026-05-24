@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCG Archive System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="header__brand" href="#" aria-label="CCG Archive" tabindex="-1">
+        <span class="header__mark">CCG</span>
+        <span class="header__title">Archive System</span>
+      </a>
+
+      <nav class="header__nav nav" aria-label="Archive navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><button class="nav__button" id="ccgButton" type="button">CCG</button></li>
+          <li class="nav__item"><button class="nav__button" id="ranksButton" type="button">Ranks</button></li>
+          <li class="nav__item"><button class="nav__button" id="unitsButton" type="button">Divisions</button></li>
+          <li class="nav__item"><button class="nav__button" id="districtsButton" type="button">Districts</button></li>
+          <li class="nav__item"><button class="nav__button" id="quinqueButton" type="button">Quinque</button></li>
+          <li class="nav__item"><button class="nav__button" id="protocolsButton" type="button">Protocols</button></li>
+          <li class="nav__item nav__item--close">
+            <button class="nav__button nav__button--close" id="closeArchiveButton" type="button">Close</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="archive">
+    <section class="archive__section" id="ccgSection" hidden>
+      <div class="archive__intro intro">
+        <p class="intro__eyebrow">Commission of Counter Ghoul</p>
+        <h1 class="intro__title">Central CCG operational archive</h1>
+        <p class="intro__text">
+          The CCG is a specialized investigative organization responsible for identifying,
+          analyzing, and neutralizing ghoul-related threats. This archive stores field
+          reports, division records, rank classifications, and civilian protection procedures.
+        </p>
+      </div>
+
+      <div class="archive__panel panel">
+        <div class="panel__meta">
+          <span class="panel__code">TOKYO / 24 DISTRICTS</span>
+          <span class="panel__status">Status: active</span>
+        </div>
+        <div class="panel__grid">
+          <article class="card">
+            <span class="card__index">01</span>
+            <h2 class="card__title">Investigations</h2>
+            <p class="card__text">Analysis of traces, field reports, and repeated ghoul activity patterns.</p>
+          </article>
+          <article class="card">
+            <span class="card__index">02</span>
+            <h2 class="card__title">District security</h2>
+            <p class="card__text">Continuous supervision of city sectors and support for patrol units.</p>
+          </article>
+          <article class="card">
+            <span class="card__index">03</span>
+            <h2 class="card__title">Special operations</h2>
+            <p class="card__text">Coordination of controlled actions against high-risk targets.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="archive__section" id="ranksSection" hidden>
+      <div class="archive__intro intro">
+        <p class="intro__eyebrow">Personnel hierarchy</p>
+        <h1 class="intro__title">CCG investigator ranks</h1>
+        <p class="intro__text">
+          Rank structure defines case access, operational authority, and command
+          responsibility during field deployments.
+        </p>
+      </div>
+
+      <div class="archive__grid archive__grid--cards">
+        <article class="card"><span class="card__index">R3</span><h2 class="card__title">Rank 3</h2><p class="card__text">Entry-level field service and operational training.</p></article>
+        <article class="card"><span class="card__index">R2</span><h2 class="card__title">Rank 2</h2><p class="card__text">Investigators assigned to patrol support, surveillance, and area security.</p></article>
+        <article class="card"><span class="card__index">R1</span><h2 class="card__title">Rank 1</h2><p class="card__text">Independent case work and direct participation in combat operations.</p></article>
+        <article class="card"><span class="card__index">FC</span><h2 class="card__title">First Class</h2><p class="card__text">Experienced agents leading investigative and analytical teams.</p></article>
+        <article class="card"><span class="card__index">ASC</span><h2 class="card__title">Associate Special Class</h2><p class="card__text">Operational commanders assigned to elevated-risk cases.</p></article>
+        <article class="card"><span class="card__index">SC</span><h2 class="card__title">Special Class</h2><p class="card__text">The highest investigator class, responsible for critical decisions.</p></article>
+      </div>
+    </section>
+
+    <section class="archive__section" id="unitsSection" hidden>
+      <div class="archive__intro intro">
+        <p class="intro__eyebrow">Internal departments</p>
+        <h1 class="intro__title">CCG divisions and secure zones</h1>
+        <p class="intro__text">
+          The CCG complex combines administration, security systems, research
+          facilities, and infrastructure required for investigator operations.
+        </p>
+      </div>
+
+      <div class="archive__grid archive__grid--cards">
+        <article class="card"><h2 class="card__title">Administrative center</h2><p class="card__text">Case registries, access authorizations, and resource coordination.</p></article>
+        <article class="card"><h2 class="card__title">Security system</h2><p class="card__text">Monitoring, entry control, and protection of archive data.</p></article>
+        <article class="card"><h2 class="card__title">Residential quarters</h2><p class="card__text">Recovery space for agents assigned to extended shifts.</p></article>
+        <article class="card"><h2 class="card__title">Laboratories</h2><p class="card__text">Biological analysis, kakuhou research, and technology development.</p></article>
+        <article class="card"><h2 class="card__title">Training hall</h2><p class="card__text">Combat simulations, reflex testing, and quinque handling drills.</p></article>
+        <article class="card"><h2 class="card__title">Quinque storage</h2><p class="card__text">Controlled weapon access and technical documentation.</p></article>
+      </div>
+    </section>
+
+    <section class="archive__section" id="districtsSection" hidden>
+      <div class="archive__intro intro">
+        <p class="intro__eyebrow">Tokyo security map</p>
+        <h1 class="intro__title">24 operational districts</h1>
+        <p class="intro__text">
+          Tokyo is divided into 24 monitored sectors. Each district receives a threat
+          rating based on reports, incidents, and confirmed ghoul activity.
+        </p>
+      </div>
+
+      <div class="district">
+        <div class="district__item district__item--high">01 <span>high risk</span></div>
+        <div class="district__item district__item--medium">02 <span>medium risk</span></div>
+        <div class="district__item district__item--low">03 <span>low risk</span></div>
+        <div class="district__item district__item--medium">04 <span>medium risk</span></div>
+        <div class="district__item district__item--low">05 <span>low risk</span></div>
+        <div class="district__item district__item--high">06 <span>high risk</span></div>
+        <div class="district__item district__item--low">07 <span>low risk</span></div>
+        <div class="district__item district__item--medium">08 <span>medium risk</span></div>
+        <div class="district__item district__item--low">09 <span>low risk</span></div>
+        <div class="district__item district__item--high">10 <span>high risk</span></div>
+        <div class="district__item district__item--medium">11 <span>medium risk</span></div>
+        <div class="district__item district__item--low">12 <span>low risk</span></div>
+        <div class="district__item district__item--medium">13 <span>medium risk</span></div>
+        <div class="district__item district__item--low">14 <span>low risk</span></div>
+        <div class="district__item district__item--high">15 <span>high risk</span></div>
+        <div class="district__item district__item--medium">16 <span>medium risk</span></div>
+        <div class="district__item district__item--low">17 <span>low risk</span></div>
+        <div class="district__item district__item--medium">18 <span>medium risk</span></div>
+        <div class="district__item district__item--low">19 <span>low risk</span></div>
+        <div class="district__item district__item--high">20 <span>high risk</span></div>
+        <div class="district__item district__item--medium">21 <span>medium risk</span></div>
+        <div class="district__item district__item--low">22 <span>low risk</span></div>
+        <div class="district__item district__item--medium">23 <span>medium risk</span></div>
+        <div class="district__item district__item--high">24 <span>high risk</span></div>
+      </div>
+    </section>
+
+    <section class="archive__section" id="quinqueSection" hidden>
+      <div class="archive__intro intro">
+        <p class="intro__eyebrow">Weapon archive</p>
+        <h1 class="intro__title">Quinque classification</h1>
+        <p class="intro__text">
+          A quinque is a CCG weapon created from ghoul kagune. Every type has a
+          distinct combat profile, weight, range, and operational purpose.
+        </p>
+      </div>
+
+      <div class="archive__grid archive__grid--types">
+        <article class="type"><span class="type__code">UK</span><h2 class="type__title">Ukaku</h2><p class="type__text">Fast, light, and effective for ranged pressure.</p></article>
+        <article class="type"><span class="type__code">KK</span><h2 class="type__title">Koukaku</h2><p class="type__text">Heavy and defensive, useful for holding position.</p></article>
+        <article class="type"><span class="type__code">RK</span><h2 class="type__title">Rinkaku</h2><p class="type__text">Flexible, aggressive, and dangerous at close range.</p></article>
+        <article class="type"><span class="type__code">BK</span><h2 class="type__title">Bikaku</h2><p class="type__text">Balanced, stable, and reliable during patrol operations.</p></article>
+      </div>
+    </section>
+
+    <section class="archive__section" id="protocolsSection" hidden>
+      <div class="archive__intro intro">
+        <p class="intro__eyebrow">Secure procedures</p>
+        <h1 class="intro__title">Field protocols</h1>
+        <p class="intro__text">
+          CCG protocols define threat levels, civilian protection rules, ghoul
+          detection procedures, and the method for transferring records into the archive.
+        </p>
+      </div>
+
+      <div class="protocol">
+        <article class="protocol__item"><span class="protocol__number">I</span><p class="protocol__text">Assess the threat level and secure the incident area.</p></article>
+        <article class="protocol__item"><span class="protocol__number">II</span><p class="protocol__text">Confirm ghoul presence without exposing civilians to risk.</p></article>
+        <article class="protocol__item"><span class="protocol__number">III</span><p class="protocol__text">Request support appropriate to the case rank and operation risk.</p></article>
+        <article class="protocol__item"><span class="protocol__number">IV</span><p class="protocol__text">Close the report, tag evidence, and transfer data to the system.</p></article>
+      </div>
+
+      <div class="system">
+        <button class="system__button" id="closeSystemButton" type="button">Close system</button>
+        <p class="system__message" id="systemMessage">Archive connection remains active.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
